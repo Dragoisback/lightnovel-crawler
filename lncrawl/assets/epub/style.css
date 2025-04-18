@@ -3,11 +3,52 @@ img {
   object-fit: scale-down;
   object-position: center;
 }
-
+p {
+  font-family: 'Font';
+  display: block;
+  text-align: justify;
+  text-indent: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  overflow-wrap: break-word;
+}
 p + br {
   display: none;
 }
-
+h1 {
+    display: block;
+    font-family: "Mangabey";
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30pt;
+    padding-bottom: 0;
+    border-bottom: 2px solid #797979;
+}
+h2 {
+    color: #000;
+    display: block;
+    font-family: "Biqabygoku";
+    font-size: 2em;
+    line-height: 1.2;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: left;
+    margin: 0 0 30pt;
+    padding: 0
+}
+.pb {
+display: block;
+font-weight: bold;
+text-align: center;
+margin-bottom: 1.5em;
+margin-top: 1.5em;
+}
 #intro {
   width: 100vw;
   height: calc(100% - 30px);
@@ -20,35 +61,71 @@ p + br {
   text-align: center;
   letter-spacing: 0.25;
 }
-
 #intro .header {
   height: 200px;
 }
-
 #intro h1 {
   opacity: 1;
 }
 #intro h3 {
   opacity: 0.6;
+  font-family: "Biqabygoku";
 }
-
 #intro img {
   width: 100%;
   height: calc(100% - 300px);
   object-fit: contain;
   object-position: center;
 }
-
 #intro .footer {
   height: 50px;
   line-height: 24px;
   opacity: 0.8;
 }
-
+.block_1 {
+  color: #0043A6;
+  display: block;
+  font-family: "Brightwall Personal Use";
+  font-size: 1.6em;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 60px;
+  padding: 0
+}
+.block_2 {
+    color: #A50021;
+    font-family: "Rawk Brush", monospace;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1.2;
+    padding: 0
+}
+.block_3 {
+  color: #000;
+  font-family: "westfalia";
+  font-size: 1.5em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 70px;
+}
+.block_4 {
+  display: block;
+  font-family: "Lora";
+  font-size: 0.9em;
+  text-align: justify;
+  padding: 0
+}
+.block_5 {
+  color: #385623;
+  text-align: right;
+  font-family: "Rawk Brush";
+  font-size: 1.5em;
+  margin-top:40px;
+}
 #cover {
   object-fit: cover;
 }
-
 #volume {
   width: 100%;
   height: 100%;
