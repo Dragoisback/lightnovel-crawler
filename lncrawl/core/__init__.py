@@ -56,6 +56,12 @@ def start_app():
     cancel_method()
 
     args = get_args()
+    if args.gui:
+        from ..gui import start_gui
+
+        start_gui()
+        return
+
     if args.proxy_file:
         os.environ["use_proxy"] = "file"
         load_proxies(args.proxy_file)
