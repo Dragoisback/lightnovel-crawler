@@ -180,6 +180,10 @@ class LibraryApp:
                 self.save_library_safe()
                 self.update_listbox_safe()
 
+            # Ensure output directory exists
+            if app.output_path:
+                os.makedirs(app.output_path, exist_ok=True)
+
             last_chap_id = novel_data.get('last_chapter', 0)
 
             # Filter chapters
