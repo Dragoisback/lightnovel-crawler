@@ -56,6 +56,11 @@ _builder = Args(
             version="Lightnovel Crawler " + get_version(),
         ),
         Args(
+            "--gui",
+            action="store_true",
+            help="Launch the GUI application.",
+        ),
+        Args(
             "-l",
             dest="log",
             action="count",
